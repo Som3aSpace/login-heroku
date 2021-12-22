@@ -16,7 +16,7 @@ export default class App extends Component {
         this.setState({[name] : e.target.value})
     }
     submit = () => {
-        fetch("https://springboot-postgresql-heroku.herokuapp.com/api/v1/employees", {
+        fetch("https://backend-login-heroku.herokuapp.com/api/v1/employees", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(this.state),
